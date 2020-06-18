@@ -18,7 +18,7 @@
 ## 咋用
 
 1. 去这里新建一个 APP https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade 
-   `redirect_uri` 设置成 `https://heymind.github.io/tools/microsoft-graph-api-auth` 。
+   `redirect_uri` 设置成 `https://cuntu.github.io/api/tools/microsoft-graph-api-auth` 。
 
 2. 在 `Certificates & secrets` 面板创建一个新的 `secret`。
 
@@ -39,10 +39,9 @@ const PASS = "password"
 ## 🔥 新特性 V1.1
 
 ### ⏬ 中转下载 
-利用 `Cloudflare` 服务器中转 `OneDrive` 中文件的下载，以提高中国大陆的下载体验。已知问题，无法显示下载进度。
+利用 `Cloudflare` 服务器中转 `OneDrive` 中文件的下载，以提高中国大陆的下载体验。
 
-在配置中开启 `proxyDownload` 功能，在文件直链路径后面加 `?proxied` 即可开启，例如：
-https://storage.idx0.workers.dev/Other/zero_file?proxied
+https://down.qyjs.link
 
 ( Cloudflare 的速度也挺随缘的... )
 
@@ -79,4 +78,4 @@ POST https://storage.idx0.workers.dev/Images/?upload=<filename>&key=<key>
 同时开启**缓存功能**和**小文件上传功能**后，这就是个自建图床。
 配合**缩略图**功能，亦可提升博客页面在不同场景下的加载体验。
 
-例如 https://blog.idx0.dev 在首页文章列表配图使使用了 `large` 尺寸的缩略图，在侧栏文章列表中使用了 `smallSquare` 尺寸的缩略图。
+
